@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+    legend{background-color: white;}
+    #name:focus{background-color: grey;}
+</style>
+</head>
+<body>
+<h1> My Dream House </h1>
+<form method="post" action="http://httpbin.org/post">
+<fieldset style="background:#FAEBD7">
+<legend>Location</legend>
+    <label>Zipcode:<input type="text" name="Zipcode" size="5" pattern="[0-9]{3}"></label><br><br>
+   <label> Address 1:<input type="text" name="Address 1" size="50" maxlength="20" placeholder="Address longer than 20 characters, use the address 2"></label><br><br>
+    <label>Address 2:<textarea name="Address 2" cols="20" rows="5"></textarea></label><br><br>
+</fieldset>
+<fieldset style="background:#F0F8FF">
+<legend>Preference</legend>
+    <label>Painting Color:<input type="color" name="Painting Color" value="#0000FF"></label><br><br>
+	<label>Time you want to visit Open House:<input type="time" name="Time you want to visit Open House" min="10:00" max="16:00"></label><br><br>
+</fieldset>
+<fieldset style="background:#F5F5DC">
+<legend>Contact me</legend>
+	<label>Name:<input type="text" name="Name" id="name" pattern="[a-z]{4,}"></label><br><br>
+	<label>Phone:<input type="text" name="Phone" pattern="[0-9]{7,}"></label><br><br>
+</fieldset>	
+    <input type="submit"  value="submit">
+	<input type="reset"  value="reset">
+</form>
+</body>
+</html>
